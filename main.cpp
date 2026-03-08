@@ -9,8 +9,8 @@ void showLoadingBar()
     std::string bar = "--------------------"; // 20 guiones
     for (int i = 0; i <= 20; ++i)
     {
-        std::cout << "\rCargando datos: [" << std::string(i, '#') << std::string(20 - i, ' ') << "] " << (i * 5) << "%" << std::flush;
-        std::this_thread::sleep_for(std::chrono::milliseconds(25));
+        std::cout << "\rLoading: [" << std::string(i, '#') << std::string(20 - i, ' ') << "] " << (i * 5) << "%" << std::flush;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
     std::cout << "\n\n"; // Salt
 }
